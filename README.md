@@ -6,6 +6,10 @@ A Clojure library designed to ... well, that part is up to you.
 
 FIXME
 
+## References
+
+* https://github.com/ring-clojure/ring/wiki/Getting-Started
+
 ## License
 
 Copyright © 2013 FIXME
