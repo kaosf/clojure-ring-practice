@@ -1,6 +1,6 @@
-# hello-world
+# Clojure Ring Practice
 
-A Clojure library designed to ... well, that part is up to you.
+Ring practice.
 
 ## Usage
 
