@@ -6,11 +6,10 @@
 (defn handler [request]
   {:status 200
    :headers {"Content-Type" "text/html"}
-   :body (str
-     (html [:p "paragraph"])
-     "<ul>\n"
-     (apply str (map #(str "<li>" % "</li>\n") (seq request)))
-     "</ul>\n")})
+   :body (html
+     [:table
+       [:tr [:th "key"] [:th "value"]]
+       (map (fn [[k v]] [:tr [:td k] [:td (str v)]]) (seq request))])})
 
 (defn main []
   (run-jetty handler {:port 3000}))
