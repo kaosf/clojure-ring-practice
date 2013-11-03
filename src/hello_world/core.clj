@@ -1,5 +1,5 @@
 (ns hello-world.core
-  (:use (ring.adapter.jetty)))
+  (:use [ring.adapter.jetty]))
 
 (use 'hiccup.core)
 
