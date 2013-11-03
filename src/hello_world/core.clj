@@ -9,7 +9,7 @@
    :body (html
      [:table
        [:tr [:th "key"] [:th "value"]]
-       (map (fn [[k v]] [:tr [:td k] [:td (str v)]]) (seq request))])})
+       (for [[k v] (seq request)] [:tr [:td k] [:td (str v)]])])})
 
 (defn main []
   (run-jetty handler {:port 3000}))
