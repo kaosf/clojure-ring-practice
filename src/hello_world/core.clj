@@ -1,7 +1,6 @@
 (ns hello-world.core
-  (:require [ring.adapter.jetty :refer (run-jetty)]))
-
-(use 'hiccup.core)
+  (:require [ring.adapter.jetty :refer (run-jetty)]
+            [hiccup.core :refer (html)]))
 
 (defn handler [request]
   {:status 200
