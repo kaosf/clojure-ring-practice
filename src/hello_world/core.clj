@@ -1,5 +1,5 @@
 (ns hello-world.core
-  (:use [ring.adapter.jetty]))
+  (:require [ring.adapter.jetty :refer (run-jetty)]))
 
 (use 'hiccup.core)
 
